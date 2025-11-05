@@ -1,0 +1,149 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.home-content {
+  flex: 1; 
+}
+
+Footer {
+  background-color: #222;
+  color: white !important;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.series-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 30px auto;
+  font-family: "Sarabun", sans-serif;
+}
+.background img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;     
+  object-position: center;
+  display: block;
+}
+
+.poster {
+  width: 250px;          
+  height: auto;          
+  border-radius: 12px;   
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+  object-fit: cover;     
+  display: block;        
+  margin-top: 5px;
+  margin-left: 20px ;    
+  margin-right: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.englishname {
+  font-size: 60px;
+  font-weight: 730;
+  font-family: "Sarabun", sans-serif;
+}
+.series-details {
+  flex: 1;
+}
+p {
+    font-size: medium;
+    color: #232323;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center; 
+  margin: 30px;
+}
+
+.actors {
+  text-align: center; 
+}
+
+.actors img {
+  display: inline-block; 
+  margin: 50px auto; 
+  width: 250px;
+  border-radius: 12px;
+}
+
+.information {
+    margin: 20px;
+    font-family: "Sarabun", sans-serif;
+}
+
+h5 {
+    margin-top: 40px;
+    font-weight: bold;
+    font-family: "Sarabun", sans-serif;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Sarabun", sans-serif;
+}
+.details{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Sarabun", sans-serif;
+}
+.review-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.review-item img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+}
+
+.review-item div {
+  flex: 1;
+}
+
+.review-item p {
+  margin: 4px 0;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.review-item p:first-child {
+  font-weight: bold;
+  font-size: 16px;
+  color: #222;
+}
+
+.review-date {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin: 2px 0 8px;
+}
+
+.stars {
+  display: block;
+  color: #ffb400;    
+  font-size: 26px;
+  letter-spacing: 2px; 
+  
+}

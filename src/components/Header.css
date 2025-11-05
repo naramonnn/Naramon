@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff; /* สีพื้นหลังของ Header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเล็กน้อย */
+  position: sticky; /* ทำให้ Header ติดอยู่ด้านบนเมื่อเลื่อนหน้าจอ */
+  top: 0;
+  z-index: 1000; /* ทำให้ Header อยู่เหนือองค์ประกอบอื่น */
+}
+
+.header-logo img {
+  height: 40px; /* ขนาดความสูงของโลโก้ */
+}
+
+.header-nav {
+  display: flex;
+  gap: 15px; /* ระยะห่างระหว่างปุ่ม */
+}
+
+.header-button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.header-button.login {
+  color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.header-button.login:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.header-button.signup {
+  background-color: #007bff;
+  color: #fff;
+  border: 2px solid #007bff;
+}
+
+.header-button.signup:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}

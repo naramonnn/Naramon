@@ -1,0 +1,285 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+.home-content {
+  flex: 1; 
+}
+
+Footer {
+  background-color: #222;
+  color: white !important;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.series-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 30px auto;
+  font-family: "Sarabun", sans-serif;
+}
+.poster-wrapper {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 15px;              
+}
+.background img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;      
+  object-position: center;
+  display: block;
+}
+
+.poster {
+  width: 250px;         
+  height: auto;        
+  border-radius: 12px;   
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3); 
+  object-fit: cover;     
+  display: block;        
+  margin-top: 5px;
+  margin-left: 20px ;    
+  margin-right: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.englishname {
+  font-size: 60px;
+  font-weight: 730;
+  font-family: "Sarabun", sans-serif;
+}
+.series-details {
+  flex: 1;
+}
+p {
+    font-size: medium;
+    color: #232323;
+}
+
+.video-container {
+  display: flex;
+  justify-content: center; 
+  margin: 30px;
+}
+
+.actors {
+  text-align: center; 
+}
+
+.actors img {
+  display: inline-block; 
+  margin: 50px auto; 
+  width: 200px;
+  border-radius: 12px;
+}
+
+.information {
+    margin: 20px;
+    font-family: "Sarabun", sans-serif;
+}
+
+h5 {
+    margin-top: 40px;
+    font-weight: bold;
+    font-family: "Sarabun", sans-serif;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Sarabun", sans-serif;
+}
+.details{
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Sarabun", sans-serif;
+}
+
+.btnaddseries {
+    width: 250px;
+    border-radius: 12px;
+    margin-left: 15px ; 
+    background-color: #232323;
+    color: white!important;
+    border: none;
+    font-size: 16px;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+.btnaddseries:hover {
+    background-color: #2b2b2b;
+    color: white;
+    transform: translateY(-2px);
+}
+.review-item {
+  display: flex;
+  align-items: center;      
+  justify-content: space-between;
+  gap: 15px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+
+.review-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.review-content {
+  flex: 1;
+}
+
+.review-name {
+  margin: 0;
+  font-size: 14px;
+  color: #222;
+}
+
+.review-date {
+  display: block;
+  font-size: 12px;
+  color: #888;
+  margin: 2px 0 6px;
+}
+
+.stars {
+  color: #ffb400;
+  font-size: 22px;
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.review-comment {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.hamburger {
+  font-size: 22px;
+  cursor: pointer;
+  color: #333;
+  position: relative;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0px 2px 6px rgba(0,0,0,0.15);
+  min-width: 150px;
+  z-index: 10;
+}
+
+.dropdown a {
+  display: block;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown a:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown.show {
+  display: block;
+}
+.reasons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px; 
+  padding: 10px;
+}
+
+.reason-item {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fafafa;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  font-size: 16px;
+  color: #333;
+}
+
+.reason-item:hover {
+  background: #f0f8ff;
+  border-color: #007bff;
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.2);
+}
+
+.reason-item input[type="checkbox"] {
+  accent-color: #007bff; 
+  width: 18px;
+  height: 18px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 32px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  gap: 10px;  
+}
+
+.navbar .logo {
+  height: 50px;
+}
+.btn {
+  color: rgb(35, 35, 35);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-right .btn {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar-right .btn:hover {
+  background-color: #ddd;
+}
+
+.profile-picture {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;    
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}

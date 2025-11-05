@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 32px;
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  gap: 10px;  
+}
+
+.navbar .logo {
+  height: 50px;
+}
+.btn {
+  color: rgb(35, 35, 35);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.navbar-right .btn {
+  margin-left: 12px;
+  padding: 8px 16px;
+  border-radius: 12px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.navbar-right .btn:hover {
+  background-color: #ddd;
+}
+
+.profile-picture {
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50%;    
+  object-fit: cover;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
